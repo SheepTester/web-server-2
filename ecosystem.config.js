@@ -1,3 +1,10 @@
+/**
+ * @file
+ * pm2 config
+ *
+ * @see https://pm2.keymetrics.io/docs/usage/application-declaration/#attributes-available
+ */
+
 export default {
   apps: [
     {
