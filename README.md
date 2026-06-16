@@ -9,8 +9,12 @@ Tech stack:
 - Ubuntu: matches my WSL dev environment
 - Node, TypeScript: I'm most familiar with this
 - express.js: ubiquitous
-- Caddy: HTTPS (recommended by LLM)
-- pm2: process manager (recommended by LLM)
+- sqlite3: simple (single-file) and way better than a plain JSON file
+- [Caddy][caddy]: HTTPS "recommended by LLM"
+- [pm2]: process manager (recommended by LLM)
+
+[caddy]: https://caddyserver.com/docs/getting-started
+[pm2]: https://pm2.keymetrics.io/docs/usage/quick-start/
 
 ## Development
 

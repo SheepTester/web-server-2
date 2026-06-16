@@ -1,14 +1,17 @@
 import esbuild from "esbuild";
 
-const [, , mode] = process.argv;
-
 const context = await esbuild.context({
   entryPoints: ["src/index.ts"],
   outdir: "dist",
   platform: "node",
+  packages: "external",
   format: "esm",
+  bundle: true,
+  loader: { ".css": "file" },
+  assetNames: "assets/[name]",
 });
 
+const [, , mode] = process.argv;
 switch (mode) {
   case "build": {
     await context.rebuild();
