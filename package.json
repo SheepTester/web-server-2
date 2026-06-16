@@ -3,7 +3,7 @@
   "scripts": {
     "build": "rm -rf dist && node esbuild.config.ts build",
     "dev:build": "node esbuild.config.ts watch",
-    "dev:serve": "node --watch dist/index.js",
+    "dev:serve": "node --watch --env-file=.env dist/index.js",
     "dev": "run-p dev:*"
   },
   "dependencies": {

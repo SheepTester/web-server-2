@@ -11,7 +11,7 @@ app.use(cors());
 app.use("/assets", express.static("dist/assets"));
 
 app.get("/", (_req, res) => {
-  res.send("hey gamers: <a href=./test>css</a>");
+  res.send(`hey gamers: <a href=./test>css</a> (${process.env.TEST})`);
 });
 
 app.use(router);
