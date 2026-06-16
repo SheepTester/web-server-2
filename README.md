@@ -36,6 +36,10 @@ Tech stack:
 
 Service will be available at http://localhost:3000/.
 
+### Important notes
+
+- Be careful about dev dependencies. The production server will omit them, so make sure `deploy.sh`'s dependencies (e.g. esbuild) are not dev.
+
 ## Production
 
 TODO: I haven't tested any of this. I'll update this once I try it :)
