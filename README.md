@@ -8,7 +8,7 @@ Tech stack:
 
 - Ubuntu: matches my WSL dev environment
 - Node, TypeScript: I'm most familiar with this
-- express.js: ubiquitous
+- express.yml: ubiquitous
 - sqlite3: simple (single-file) and way better than a plain JSON file
 - [Caddy][caddy]: HTTPS (recommended by LLM)
 - [pm2]: process manager (recommended by LLM)
@@ -54,7 +54,7 @@ TODO: I haven't tested any of this. I'll update this once I try it :)
       ```
 
    1. ```sh
-      pm2 start ecosystem.config.js
+      pm2 start ecosystem.config.yml
       ```
 
    1. ```sh
@@ -86,7 +86,7 @@ pm2 logs --lines 100
 pm2 logs
 ```
 
-If you update `ecosystem.config.js`, run `pm2 reload ecosystem.config.js`.
+If you update `ecosystem.config.yml`, run `pm2 reload ecosystem.config.yml`.
 
 If you update `Caddyfile`, run `caddy reload`.
 
